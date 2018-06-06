@@ -1,0 +1,383 @@
+*{
+    margin : 0 px;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+}
+
+
+ul {
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#ffffff;
+    font-family: 'Georgia';
+}
+li a {
+    border-right: 1px solid #bbb;
+    border-block-end-style: 50%;       
+}
+
+li:last-child {
+    border:none;
+}   
+
+li a {
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    float:left;
+    background-color:#4aaaa5;
+    font-size: 36px;
+    color: #ffffff;
+    -webkit-animation-name: emailyay; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+    animation-name: emailyay;
+    animation-duration: 30s; 
+}
+
+.subtleBody  {
+    width: 100%;
+    min-height: 700px;
+    background-image: url("../images/circles-dark.png");
+    overflow: auto;
+}
+.aboutMe {
+    background-color: #ffffff; 
+    width: 900px;
+    height: auto;
+    margin-left: 20%;
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.aboutMeheader {
+    background-color: #ffffff; 
+    width: 900px;
+    height: auto;
+    margin-left: 20%;
+    overflow: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.pageHead {
+    color:#4aaaa5;
+    border-bottom-style: solid;
+    padding-bottom:30px; 
+    border-color: #bbb; 
+    border-width: 3px;
+}
+.splitVision{
+    float: left; 
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.formStyle{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #777777;
+    width: 100%;
+
+}
+.submitBtn{
+    width: 100px;
+    height: 50px;
+    background: #4aaaa5;
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.emailBtn{
+    float: right;
+    width: 100px;
+    height: 30px;
+    margin-right:180px ;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    background-color: #4aaaa5;
+    -webkit-animation-name: emailyay; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    animation-name: emailyay;
+    animation-duration: 12s; 
+}
+                    /* Standard syntax */
+                    @keyframes emailyay {
+                            from {background-color:#4aaaa5;}
+                            to {background-color: rebeccapurple;}
+                    }
+                    /* Safari 4.0 - 8.0 */
+                    @-webkit-keyframes emailyay {
+                        from {background-color: #4aaaa5;}
+                        to {background-color: rebeccapurple;}
+                    }
+section {
+    float: left;
+    margin: 0 1.5%;
+    width: 50%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bbb;
+  }
+  aside {
+    float: left;
+    margin: 0 1.5%;
+    width: 40%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #bbb;
+  }
+  img{
+      width: 250px;
+  }
+  caption{
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 5px;
+  }
+  #sticky { /* I used a ID because there is only one footer per page */
+    float:clear;  
+    width:100%;
+    height:44px;
+    padding-top:20px;
+    background: #666666;
+    color:#ffffff;
+    font-size:16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align:center;
+    position:fixed;    /*Here's what sticks it*/
+    bottom:0;          /*to the bottom of the window*/
+    left:0;            /*and to the left of the window.*/
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 10px;
+  }
+  
+  /* portfolio page */
+
+.work {
+    position: relative;
+    float: left;
+    width: 300px;
+    margin: 20px 0 25px;
+    overflow: auto;
+  }
+  
+  .work:nth-child(even) {
+    margin-right: 0px;
+  }
+  
+  .work img {
+    width: 100%;
+    border: 0 none;
+    opacity: 0.8;
+  }
+  
+  .work h3 {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 0;
+    font-weight: 300;
+    line-height: 30px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+  }
+  
+  .auth-image {
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-top: 10px;
+    margin-right: 25px;
+  }
+
+
+
+
+/* FOR Phone AND SMALL DEVICES */
+@media screen and (max-width:640px) {
+    
+    ul {
+        clear: both;
+        width: 100%;
+        list-style-type: none;
+        margin:0;
+        padding: 0;
+        overflow: hidden;
+        background-color:#ffffff;
+        font-family: 'Georgia';
+    }
+    li a {
+        border-right: 1px solid #bbb;
+        border-block-end-style: 50%;       
+    }
+    
+    li:last-child {
+        border:none;
+    }   
+    
+    li a {
+        display: block;
+        color: #777777;
+        text-align: center;
+        padding: 14px 12%;
+        text-decoration: none;
+        float: left;
+    }
+    li a:hover:not(.active) {
+        background-color: #111;
+    }
+    
+    .active {
+        padding-left: 0%;
+        width: 100%;
+        background-color:#4aaaa5;
+        font-size: 24px;
+        color: #ffffff;
+        -webkit-animation-name: emailyay; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+        animation-name: emailyay;
+        animation-duration: 30s; 
+    }
+
+    .aboutMeheader {
+        clear: both;
+        background-color: #ffffff; 
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        overflow: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .aboutMe {
+    background-color: #ffffff; 
+    width: 70%;
+    height: auto;
+    margin: 5% 8% 15% 12%;
+    overflow: auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+    section {
+        float: left;
+        margin: 0 1.5%;
+        width: 60%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #bbb;
+      }
+
+      .work {
+        position: relative;
+        float: left;
+        width: 274px;
+        margin: 20px 80px 25px;
+        overflow: auto;
+      }
+      .pageHead {
+        color:#4aaaa5;
+        border-bottom-style: solid;
+        padding-bottom:30px; 
+        border-color: #bbb; 
+        border-width: 3px;
+        width: 100%;
+    }
+    .formStyle{
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #777777;
+    }
+}
+
+/* Tablet */
+@media screen and (max-width:768px) {
+
+    .active {
+        float:left;
+        margin-left: 100px;
+        background-color:#4aaaa5;
+        font-size: 36px;
+        color: #ffffff;
+        -webkit-animation-name: emailyay; /* Safari 4.0 - 8.0 */
+        -webkit-animation-duration: 30s; /* Safari 4.0 - 8.0 */
+        animation-name: emailyay;
+        animation-duration: 30s; 
+    }
+    .aboutMeheader {
+        clear: both;
+        background-color: #ffffff; 
+        width: 100%;
+        height: auto;
+        margin-left: 0%;
+        overflow: auto;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+    }
+    .aboutMe {
+    background-color: #ffffff; 
+    width: 70%;
+    height: auto;
+    margin: 5% 8% 15% 12%;
+    overflow: auto;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+    }
+    
+    section {
+        float: left;
+        margin: 0 1.5%;
+        width: 60%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #bbb;
+      }
+
+      .work {
+        position: relative;
+        float: left;
+        width: 274px;
+        margin: 20px 80px 25px;
+        overflow: auto;
+      }
+      .pageHead {
+        color:#4aaaa5;
+        border-bottom-style: solid;
+        padding-bottom:30px; 
+        border-color: #bbb; 
+        border-width: 3px;
+        width: 100%;
+    }
+    .formStyle{
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #777777;
+    }
+}
+
+/* desktop */
+@media screen and (max-width:980px) {
+
+}
